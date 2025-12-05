@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hypechain</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- Navbar CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ===========================
+         NAVBAR
+    ============================ -->
+    <nav class="hc-navbar">
+      <div class="hc-container">
+        <!-- Logo -->
+        <div class="hc-logo">HYPECHAIN</div>
+
+        <!-- Mobile Menu Button -->
+        <div class="hc-menu-btn" id="navToggle">
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <!-- Nav Links -->
+        <ul class="hc-nav-links" id="navMenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#details">About</a></li>
+          <li>
+            <a href="https://wa.me/254708533033" target="_blank">Contact</a>
+          </li>
+          <li>
+            <a href="https://forms.gle/SpQ6aSFvmrGm2ej19" class="hc-btn"
+              >Join Waitlist</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ===========================
+     HERO SECTION
+=========================== -->
+    <section class="hc-hero">
+      <div class="hero-container">
+        <!-- Left Text -->
+        <div class="hero-text">
+          <h1>Turn Influence Into Income</h1>
+          <p>
+            Hypechain helps creators track impact, prove value, and get paid
+            fairly and instantly for viral content and influence.
+          </p>
+          <a href="https://forms.gle/SpQ6aSFvmrGm2ej19" class="hero-btn"
+            >Join The Waitlist</a
+          >
+        </div>
+
+        <!-- Right Image -->
+        <div class="hero-image">
+          <img src="images/content creator 2.jpg" alt="Creator working" />
+        </div>
+      </div>
+      <!-- Minimal Floating Social Emojis -->
+      <div class="floating-emojis"></div>
+    </section>
+
+    <section class="why2">
+      <div class="why2-bg"></div>
+
+      <div class="why2-container">
+        <!-- Left: Image NOW -->
+        <div class="why2-image-wrapper reveal delay1">
+          <div class="why2-image-glass">
+            <img src="images/creator 2.jpeg" alt="Creators" />
+          </div>
+        </div>
+
+        <!-- Right: Text -->
+        <div class="why2-text reveal">
+          <h2>Why Hypechain Exists</h2>
+          <p class="why2-desc">
+            Creators are driving culture, virality, and sales,yet remain
+            underpaid and overlooked.
+          </p>
+
+          <div class="why2-cards">
+            <div class="why2-card reveal delay1">
+              <div class="why2-icon"><i class="fas fa-user-slash"></i></div>
+              <p>
+                72% of African creators earn less than $65/month while brands
+                benefits from their influence
+              </p>
+            </div>
+
+            <div class="why2-card reveal delay2">
+              <div class="why2-icon"><i class="fas fa-chart-line"></i></div>
+              <p>Brands can’t trace and record their ROI</p>
+            </div>
+
+            <div class="why2-card reveal delay3">
+              <div class="why2-icon"><i class="fas fa-lock"></i></div>
+              <p>
+                Platforms and agencies capture most of the value creators
+                generate.
+              </p>
+            </div>
+          </div>
+
+          <a href="https://forms.gle/SpQ6aSFvmrGm2ej19" class="why2-btn"
+            >Join The Waitlist</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- ===========================
+      CREATOR VOICES (VIDEO CARDS)
+=========================== -->
+    <section class="video3">
+      <div class="video3-header reveal">
+        <h2>Hear From The Creators</h2>
+        <p>
+          Real stories from viral creators whose content moved brands, but
+          didn’t pay them back.
+        </p>
+      </div>
+
+      <div class="video3-scroller" id="videoScroller">
+        <!-- Card 1 -->
+        <!-- Video Card -->
+        <div
+          class="video3-card reveal delay1"
+          onclick="openVideoPopup('7293230218813115678')"
+        >
+          <div
+            class="video3-bg"
+            style="background-image: url('images/complaint1.jpg')"
+          ></div>
+
+          <div class="video3-overlay">
+            <p>“Brands taking advantage of small content creators.”</p>
+            <div class="video3-play"><i class="fas fa-play"></i></div>
+            <span class="video3-cta">Watch on TikTok</span>
+          </div>
+        </div>
+
+        <!-- Video Popup Modal -->
+        <div id="videoPopup" class="video-popup">
+          <div class="video-popup-content">
+            <span class="close-popup" onclick="closeVideoPopup()">&times;</span>
+
+            <iframe
+              id="popupFrame"
+              src=""
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media;"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="video3-card reveal delay1"
+          onclick="openVideoPopup('7534884270934920478')"
+        >
+          <div
+            class="video3-bg"
+            style="background-image: url('images/comlaint2.jpg')"
+          ></div>
+
+          <div class="video3-overlay">
+            <p>“Brands take time to pay the agreed amount.”</p>
+            <div class="video3-play"><i class="fas fa-play"></i></div>
+            <span class="video3-cta">Watch on TikTok</span>
+          </div>
+        </div>
+
+        <!-- Video Popup Modal -->
+        <div id="videoPopup" class="video-popup">
+          <div class="video-popup-content">
+            <span class="close-popup" onclick="closeVideoPopup()">&times;</span>
+
+            <iframe
+              id="popupFrame"
+              src=""
+              frameborder="0"
+              allow="autoplay"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div
+          class="video3-card reveal delay1"
+          onclick="openVideoPopup('7487961837108071702')"
+        >
+          <div
+            class="video3-bg"
+            style="background-image: url('images/complaint3.jpg')"
+          ></div>
+
+          <div class="video3-overlay">
+            <p>“Brands Refusing to pay after work is done.”</p>
+            <div class="video3-play"><i class="fas fa-play"></i></div>
+            <span class="video3-cta">Watch on TikTok</span>
+          </div>
+        </div>
+
+        <!-- Video Popup Modal -->
+        <div id="videoPopup" class="video-popup">
+          <div class="video-popup-content">
+            <span class="close-popup" onclick="closeVideoPopup()">&times;</span>
+
+            <iframe
+              id="popupFrame"
+              src=""
+              frameborder="0"
+              allow="autoplay"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <!-- Video Popup Modal -->
+        <div id="videoPopup" class="video-popup">
+          <div class="video-popup-content">
+            <span class="close-popup" onclick="closeVideoPopup()">&times;</span>
+
+            <iframe
+              id="popupFrame"
+              src=""
+              frameborder="0"
+              allow="autoplay"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div
+          class="video3-card reveal delay1"
+          onclick="openVideoPopup('7184898904104635690')"
+        >
+          <div
+            class="video3-bg"
+            style="background-image: url('images/complaint5.jpg')"
+          ></div>
+
+          <div class="video3-overlay">
+            <p>“We dont get paid.”</p>
+            <div class="video3-play"><i class="fas fa-play"></i></div>
+            <span class="video3-cta">Watch on TikTok</span>
+          </div>
+        </div>
+
+        <!-- Video Popup Modal -->
+        <div id="videoPopup" class="video-popup">
+          <div class="video-popup-content">
+            <span class="close-popup" onclick="closeVideoPopup()">&times;</span>
+
+            <iframe
+              id="popupFrame"
+              src=""
+              frameborder="0"
+              allow="autoplay"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--What is Hypechain-->
+    <section class="wh3">
+      <div class="wh3-container">
+        <!-- LEFT: Text -->
+        <div class="wh3-text wh3-reveal">
+          <h2>What Is Hypechain?</h2>
+
+          <div class="wh3-rotate">
+            <span>Trend Tracking</span>
+            <span>Influence Proof</span>
+            <span>Creator Monetization</span>
+            <span>Fair Payouts</span>
+          </div>
+
+          <p>
+            Hypechain is a creator-first platform that tracks the real value of
+            creator influence. It shows how content performs and what impact it
+            delivers, giving creators and brands clear, transparent results.
+          </p>
+
+          <p>
+            Each creator receives a unique <strong>HypeTag</strong> for every
+            campaign. Hypechain then tracks:
+          </p>
+
+          <ul class="wh3-list">
+            <li>✔ Views & engagement</li>
+            <li>✔ Click-throughs</li>
+            <li>✔ Sales conversions</li>
+            <li>✔ Offline receipt uploads</li>
+            <li>✔ Automatic payouts</li>
+            <li>✔ A shared deal room</li>
+          </ul>
+
+          <p>No guesses. No screenshots. No unpaid work.</p>
+
+          <a class="wh3-btn" href="https://forms.gle/SpQ6aSFvmrGm2ej19"
+            >Join the Waitlist</a
+          >
+        </div>
+
+        <!-- RIGHT: Animated Visual -->
+        <div class="wh3-visual wh3-reveal delay1">
+          <div class="wh3-card">
+            <img src="images/hypechain.png" alt="Hypechain Preview" />
+          </div>
+          <div class="wh3-glow"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="hiw-section">
+      <div class="container">
+        <div class="hiw-header">
+          <h2>How Hypechain Works</h2>
+          <p>
+            See the full lifecycle of influence, from content to conversion.
+          </p>
+        </div>
+
+        <div class="hiw-steps">
+          <!-- Step 1 -->
+          <div class="hiw-step fade-up">
+            <div class="hiw-step-text">
+              <span class="hiw-number">01</span>
+              <h3>Create or Join a Campaign</h3>
+              <p>
+                Brands create campaigns and creators join or apply within the
+                platform.
+              </p>
+            </div>
+            <div class="hiw-step-image">
+              <img src="images/step 1.png" alt="Step 1" />
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="hiw-step reverse fade-up">
+            <div class="hiw-step-text">
+              <span class="hiw-number">02</span>
+              <h3>Get Your Unique HypeTag</h3>
+              <p>
+                Each creator receives a unique HypeTag that you embed on your
+                post , used to track influence in real time.
+              </p>
+            </div>
+            <div class="hiw-step-image">
+              <img src="images/step2.png" alt="Step 2" />
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="hiw-step fade-up">
+            <div class="hiw-step-text">
+              <span class="hiw-number">03</span>
+              <h3>Share & Track Impact</h3>
+              <p>
+                Views, clicks, engagements, and sales are automatically tracked
+                in your dashboard.
+              </p>
+            </div>
+            <div class="hiw-step-image">
+              <img src="images/sales 3.png" alt="Step 3" />
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="hiw-step reverse fade-up">
+            <div class="hiw-step-text">
+              <span class="hiw-number">04</span>
+              <h3>Get Paid Fairly</h3>
+              <p>
+                Payouts are calculated instantly based on performance and
+                agreement. No more unpaid influence.
+              </p>
+            </div>
+            <div class="hiw-step-image">
+              <img src="images/step 4.png" alt="Step 4" />
+            </div>
+          </div>
+        </div>
+
+        <div class="hiw-cta">
+          <a href="https://forms.gle/SpQ6aSFvmrGm2ej19" class="btn-primary"
+            >Join the waitlist</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="why-matters" class="why-matters-section">
+      <div class="wm-header">
+        <h2>Why Hypechain Matters</h2>
+        <p>
+          Creating fairness, transparency, and real value for both creators and
+          brands.
+        </p>
+      </div>
+
+      <div class="wm-grid">
+        <!-- CREATORS CARD -->
+        <div class="wm-card wm-creators fade-up">
+          <div class="wm-icon">💜</div>
+          <h3>For Creators</h3>
+
+          <ul>
+            <li>Prove your influence</li>
+            <li>Track every engagement and sale</li>
+            <li>Get paid instantly per performance and agreement</li>
+            <li>Build your digital portfolio</li>
+            <li>No more exploitation or unpaid collaborations</li>
+          </ul>
+
+          <a href="https://forms.gle/SpQ6aSFvmrGm2ej19" class="wm-btn"
+            >Join as a Creator</a
+          >
+        </div>
+
+        <!-- BRANDS CARD -->
+        <div class="wm-card wm-brands fade-up delay1">
+          <div class="wm-icon">📊</div>
+          <h3>For Brands</h3>
+
+          <ul>
+            <li>Clear ROI dashboard</li>
+            <li>Choose creators based on your niche and verified impact</li>
+            <li>Pay only for real results</li>
+            <li>Reduce marketing risk</li>
+            <li>Support local youth & micro-influencers</li>
+          </ul>
+
+          <a href="https://forms.gle/SpQ6aSFvmrGm2ej19" class="wm-btn alt"
+            >Join as a Brand</a
+          >
+        </div>
+      </div>
+    </section>
+    <section id="social-proof" class="sp-section">
+      <div class="sp-header">
+        <h2>Who’s Already Joining?</h2>
+        <p>Creators, brands, and early adopters are already coming on board.</p>
+      </div>
+
+      <div class="sp-counter-grid">
+        <!-- Counter 1 -->
+        <div class="sp-counter-card sp-fade">
+          <div class="sp-number" data-target="203">0</div>
+          <p>Creators Registered</p>
+        </div>
+
+        <!-- Counter 2 -->
+        <div class="sp-counter-card sp-fade delay1">
+          <div class="sp-number" data-target="43">0</div>
+          <p>Brands Registered</p>
+        </div>
+
+        <!-- Counter 3 -->
+        <div class="sp-counter-card sp-fade delay2">
+          <div class="sp-number" data-target="1100">0</div>
+          <p>Waiting List Views</p>
+        </div>
+      </div>
+    </section>
+
+    <!--Phase 2-->
+    <section id="future-path" class="fw-section">
+      <!-- Background network -->
+      <canvas id="fw-network"></canvas>
+
+      <div class="fw-container fw-reveal">
+        <h2 class="fw-title">Where Hypechain Is Going Next</h2>
+
+        <p class="fw-subtitle">
+          Influence is evolving , and we’re building the infrastructure that
+          makes creators the owners of the culture they spark.
+        </p>
+
+        <div class="fw-content">
+          <h3>Phase 2 — Decentralized Trend Ownership</h3>
+
+          <p>
+            Viral moments will no longer disappear into platforms that profit
+            alone. Hypechain is moving toward a world where:
+          </p>
+
+          <ul class="fw-list">
+            <li>✔ Creators can **own** their viral moments</li>
+            <li>✔ Early supporters can hold proof of being “first movers”</li>
+            <li>✔ Trend influence becomes a **digital asset**</li>
+            <li>
+              ✔ Value flows back to the people who drive culture — not the
+              platforms
+            </li>
+          </ul>
+
+          <p class="fw-soft">
+            This is the foundation of a new internet economy where influence is
+            measurable, ownable, and tradeable.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--Founders-->
+    <section id="about-founders" class="founders10-section">
+      <div class="founders10-container">
+        <!-- LEFT — Image -->
+        <div class="founders10-image founders10-reveal">
+          <div class="founders10-image-wrapper">
+            <img src="images/founders2.jpg" alt="Hypechain Founders" />
+          </div>
+        </div>
+
+        <!-- RIGHT — Text -->
+        <div class="founders10-text founders10-reveal delay1">
+          <h2>Why We Built Hypechain</h2>
+
+          <p>
+            We built Hypechain because content creation has become a lifeline
+            for young people ,yet it’s the space where they’re most exploited.
+            In Kenya, over 60% of youth are unemployed, and many turn to
+            creating content to survive.
+          </p>
+
+          <p>
+            But 85% of small creators say they are underpaid or not paid at all,
+            even when their content drives real engagement and sales for brands.
+            We have seen young creators do the work, spark trends, push
+            products, and walk away with "Exposure","Free gifts" or worse
+            nothing simply because they can’t prove the impact of their
+            influence.
+          </p>
+
+          <p>
+            As African innovators, our mission has always been to use technology
+            to solve community problems and create opportunities for youth.
+            Hypechain was born from that mission..
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--FAQS-->
+    <section id="faq" class="faq11-section">
+      <div class="faq11-container">
+        <h2 class="faq11-title">Frequently Asked Questions</h2>
+
+        <div class="faq11-list">
+          <!-- FAQ ITEM -->
+          <div class="faq11-item">
+            <button class="faq11-question">How does Hypechain work?</button>
+            <div class="faq11-answer">
+              <p>
+                Hypechain tracks real engagement, clicks, and conversions using
+                unique HypeTags linked to each creator and campaign.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq11-item">
+            <button class="faq11-question">How do creators get paid?</button>
+            <div class="faq11-answer">
+              <p>
+                Creators earn automatically based on their agreement and
+                performance ,views, clicks, and verified sales. Payments are
+                tracked transparently.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq11-item">
+            <button class="faq11-question">Can brands trust the data?</button>
+            <div class="faq11-answer">
+              <p>
+                Yes. Every metric is tracked from its source using real-time
+                analytics and attribution tools designed for accuracy and
+                transparency.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq11-item">
+            <button class="faq11-question">
+              Which platforms does Hypechain support?
+            </button>
+            <div class="faq11-answer">
+              <p>
+                Hypechain supports TikTok, Instagram, YouTube Shorts, and any
+                platform where creators can share their HypeTag link.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq11-item">
+            <button class="faq11-question">What is a HypeTag?</button>
+            <div class="faq11-answer">
+              <p>
+                A HypeTag is a unique tracking link assigned to a creator for
+                each campaign. It measures true influence and ensures fair
+                payment.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq11-item">
+            <button class="faq11-question">Is Hypechain free?</button>
+            <div class="faq11-answer">
+              <p>
+                Hypechain is free for creators. Brands pay only when campaigns
+                generate real results.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--CTA-->
+    <section id="cta-big" class="cta-clean-section">
+      <div class="cta-clean-container">
+        <h2 class="cta-clean-title">Be Among the First to Use Hypechain</h2>
+        <p class="cta-clean-subtitle">
+          Join thousands of creators and brands shaping the future of
+          transparent, fair influence.
+        </p>
+
+        <div class="cta-clean-buttons">
+          <a
+            href="https://forms.gle/SpQ6aSFvmrGm2ej19"
+            class="cta-clean-btn primary"
+            >Join Creator Waitlist</a
+          >
+          <a
+            href="https://forms.gle/SpQ6aSFvmrGm2ej19"
+            class="cta-clean-btn secondary"
+            >Join as a Brand</a
+          >
+          <a
+            href="https://forms.gle/SpQ6aSFvmrGm2ej19"
+            class="cta-clean-btn outline"
+            >Get Notified at Launch</a
+          >
+        </div>
+      </div>
+    </section>
+    <!--Footer-->
+    <footer id="footer12" class="footer12-section">
+      <!-- Floating shapes (soft animation) -->
+      <div class="footer12-float float1"></div>
+      <div class="footer12-float float2"></div>
+
+      <div class="footer12-container">
+        <!-- Logo -->
+        <h2 class="footer12-logo">HYPECHAIN</h2>
+
+        <!-- Navigation links -->
+        <div class="footer12-links">
+          <a href="#header">Home</a>
+          <a href="#creator-voices">For Creators</a>
+          <a href="#how-it-works">For Brands</a>
+          <a href="https://forms.gle/SpQ6aSFvmrGm2ej19">Join Waitlist</a>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="footer12-social">
+          <a
+            href="https://www.linkedin.com/in/shamayel-karani-0806ba1b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            class="footer12-social-icon"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/being_tech_her?igsh=MWVjaWFncXIzNTFmbA=="
+            class="footer12-social-icon"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.tiktok.com/@shamayel108?_r=1&_t=ZM-91l1ViGqHAx"
+            class="footer12-social-icon"
+          >
+            <i class="fab fa-tiktok"></i>
+          </a>
+        </div>
+
+        <!-- Tagline -->
+        <p class="footer12-tagline">Built in Africa for the world.</p>
+      </div>
+    </footer>
+
+    <script>
+      function openVideoPopup(videoId) {
+        const modal = document.getElementById("videoPopup");
+        const frame = document.getElementById("popupFrame");
+
+        // frame.src = url;  // Load TikTok embed video
+        // This constructs the official player URL using your ID
+        frame.src =
+          "https://www.tiktok.com/embed/v2/" + videoId + "?autoplay=1&rel=0";
+        modal.style.display = "flex";
+      }
+
+      function closeVideoPopup() {
+        const modal = document.getElementById("videoPopup");
+        const frame = document.getElementById("popupFrame");
+
+        modal.style.display = "none";
+        frame.src = ""; // Stop video playback
+      }
+    </script>
+
+    <!-- script JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
